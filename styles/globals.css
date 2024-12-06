@@ -572,7 +572,6 @@ header {
 .popular-dishies-item {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .popular-dishies-item-top {
@@ -583,6 +582,7 @@ header {
     height: 16rem;
     width: 96%;
     object-fit: cover;
+    width: 320px;
 }
 
 .popular-dishies-item-details {
@@ -789,4 +789,130 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+
+
+
+
+@media (max-width: 1108px) {
+
+    header {
+        width: 1108px;
+        z-index: 1000;
+        background-color: #4a4a4a;
+        position: fixed;
+        color: var(--white);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 3rem;
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .log {
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        font-family: 'wishful';
+        letter-spacing: 1px;
+    }
+
+    .header-cta {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hero {
+        background-image: url('/public/assets/images/hero1.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        position: relative;
+        height: calc(100vh - 5rem);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1108009c
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        width: 400px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .intro {
+        padding: 5rem 0;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .popular-dishies-con {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .about-section {
+        align-items: center;
+        gap: 2rem;
+
+    }
+
+    .about-section h3 {
+        width: 484px;
+        text-align: center;
+    }
+
+    .about-section p {
+        width: 500px;
+        text-align: center;
+    }
+
+    .discover-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discover-top {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

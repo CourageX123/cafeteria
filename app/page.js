@@ -15,9 +15,9 @@ const page = () => {
                         <label>cafeteria</label>
                     </div>
                     <div className="header-cta">
-                        <button className="btn-white pointer">
-                            oder now
-                        </button>
+                        <a href='/signup' className="btn-white pointer">
+                            order now
+                        </a>
                     </div>
                 </nav>
             </header>
